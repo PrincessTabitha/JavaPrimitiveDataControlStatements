@@ -1,0 +1,19 @@
+
+public class calculatorProject {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Welcome to the Calculator Project");
+		//see examples on p45
+		int a=10;
+		int b=15;
+		
+		int result1= a+b;
+		int result1= a-b;
+		int result1= a*b;
+		int result1= a/b;
+		
+
+	}
+
+}

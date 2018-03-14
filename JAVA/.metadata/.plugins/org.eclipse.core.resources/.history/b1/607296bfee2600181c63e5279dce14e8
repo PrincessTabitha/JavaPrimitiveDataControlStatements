@@ -1,0 +1,11 @@
+
+public class AreaPermitterCal {
+
+}
+
+
+
+	Scanner sc = new Scanner (Syste.in);
+	String choice = "y;"
+
+While 
