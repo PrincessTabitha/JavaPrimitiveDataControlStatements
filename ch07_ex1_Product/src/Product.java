@@ -21,8 +21,6 @@ public class Product {
     	
     	}
 
-
-    }
     public Product(String code, String description, double price) {
 		super();
 		this.code = code;

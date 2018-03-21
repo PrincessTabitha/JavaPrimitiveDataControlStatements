@@ -18,8 +18,9 @@ public class ProductApp {
             sc.nextLine();  // discard any other data entered on the line
 
             // get the Product object
-            Product product = ProductDB.getProduct(productCode);
-
+            ProductDB db= new ProductDB();
+            Product product = db.getProduct(productCode);
+            
             // display the output
             System.out.println();
             System.out.println("SELECTED PRODUCT");

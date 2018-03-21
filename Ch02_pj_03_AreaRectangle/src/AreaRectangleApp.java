@@ -15,7 +15,7 @@ public class AreaRectangleApp {
 			System.out.println("print Width");
 			double Width = sc.nextDouble();
 			
-			//Do calaculations
+			//Do calculations
 			double Area= Length * Width;
 			double Perimeter = (2*Length)+(2*Width);
 			
@@ -27,7 +27,7 @@ public class AreaRectangleApp {
 			System.out.println("Area:   " + Area + "\n "+ "Perimeter:    " + Perimeter);
 			
 			//add continue statement
-			System.out.println("continue?  (y/n): " ); // this will reference the y equalsignore declared at trhe beginning
+			System.out.println("continue?  (y/n): " ); // this will reference the choice y  declared at the beginning
 			choice = sc.next();
 				
 		}

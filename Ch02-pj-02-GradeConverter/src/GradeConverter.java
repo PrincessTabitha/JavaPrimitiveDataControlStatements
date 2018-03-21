@@ -9,7 +9,7 @@ public class GradeConverter {
 		
 		Scanner sc= new Scanner(System.in);
 		
-		String letterGrade ="z"; //declare your output letter grade variable
+		String letterGrade =" "; //declare your output letter grade variable meaning initialize it to a string
 		
 		String choice = "y";
 		while (choice.equalsIgnoreCase("y")) {
