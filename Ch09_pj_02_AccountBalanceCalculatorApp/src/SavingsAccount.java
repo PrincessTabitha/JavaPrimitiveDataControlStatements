@@ -1,9 +1,15 @@
 
-public class SavingsAccount extends Account {
 
+public class SavingsAccount extends Account {
+	
 	private double monthlyInterestRate;
 	private double monthlyInterestPayment;
 	
+	public SavingsAccount(double balance, double mir) {
+		super(balance);
+		monthlyInterestRate = mir;
+	}
+
 	public double getMonthlyInterestRate() {
 		return monthlyInterestRate;
 	}
@@ -20,11 +26,8 @@ public class SavingsAccount extends Account {
 		this.monthlyInterestPayment = monthlyInterestPayment;
 	}
 
-	public SavingsAccount(double balance, double mir) {
-		super(balance);
-		
-	void 
-		
+	public void applyPaymentToBalance() {
+		monthlyInterestPayment = balance * monthlyInterestRate;
+		balance += monthlyInterestPayment;
 	}
-
 }

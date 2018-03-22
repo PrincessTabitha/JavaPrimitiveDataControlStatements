@@ -116,8 +116,18 @@
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch07_ex2_FutureValue_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch11_ex1_MonthSales_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch11_ex1_MonthSales"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch09_ex2_CloneableTest"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch09_ex1_DisplayableTest"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch08_ex3_EqualsTest"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch08_ex2_Product"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch08_ex1_Product_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch08_ex1_Product"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch07_ex3_AreaAndPerimeter_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch07_ex3_AreaAndPerimeter"/>
 			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch07_ex2_FutureValue"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch07_ex2_FutureValue_sol"/>
 			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch07_ex1_Product_sol"/>
 			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch07_ex1_Product"/>
 			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch06_ex4_FutureValue"/>
@@ -126,16 +136,6 @@
 			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch05_ex2_GuessNumber_sol"/>
 			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch05_ex2_GuessNumber"/>
 			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch05_ex1_FutureValue_sol"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch05_ex1_FutureValue"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch04_ex4_FutureValue_sol"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch04_ex4_FutureValue"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch04_ex3_GuessNumber_sol"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch04_ex3_GuessNumber"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch04_ex2_Invoice_sol"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch04_ex2_Invoice"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch04_ex1_FutureValue"/>
-			<item value="C:\repos"/>
-			<item value="C:\repos\JAVA"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>

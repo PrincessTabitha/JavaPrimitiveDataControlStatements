@@ -1,11 +1,22 @@
 
-public class CheckingAccount  extends Account{
+public class CheckingAccount extends Account {
 
-	public CheckingAccount(double balance, double mFee, double monthlyFee) {
+	private double monthlyFee;
+	
+	public CheckingAccount(double balance, double mFee) {
 		super(balance);
-		monthlyFee = mFee;	
+		monthlyFee = mFee;
 	}
 
+	public double getMonthlyFee() {
+		return monthlyFee;
+	}
+
+	public void setMonthlyFee(double monthlyFee) {
+		this.monthlyFee = monthlyFee;
+	}
 	
-	
+	public void subtractMonthlyFee() {
+		balance -= monthlyFee;
+	}
 }
