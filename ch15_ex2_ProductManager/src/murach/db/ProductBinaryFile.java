@@ -1,5 +1,4 @@
 package murach.db;
-
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
@@ -13,12 +12,26 @@ public final class ProductBinaryFile implements DAO<Product> {
     private final String FIELD_SEP = "\t";
 
     public ProductBinaryFile() {
-        productsPath = Paths.get("products.txt");
+        productsPath = Paths.get("products.bin");
         productsFile = productsPath.toFile();
         products = this.getAll();
+        
+      //this try and catch has been added -5  page 463
+        try {
+            if (Files.notExists(productsPath)) {
+            	Files.createFile(productsPath);
+            	
+                System.out.println("Data file not found.");
+                System.out.println("Creating file: " + 
+                        productsPath.toAbsolutePath() + "\n");
+            }
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+        
     }
 
-    @Override
+       @Override
     public List<Product> getAll() {
         // if the products file has already been read, don't read it again
         if (products != null) {
@@ -26,29 +39,30 @@ public final class ProductBinaryFile implements DAO<Product> {
         }
 
         products = new ArrayList<>();
-        if (Files.exists(productsPath)) {
-            try (BufferedReader in = new BufferedReader(
-                                     new FileReader(productsFile))) {
+        if (Files.exists(productsPath)) 
+        { //3 change this entire try section Page 496
+            try (DataInputStream in = new DataInputStream( new BufferedInputStream(
+                                     new FileInputStream(productsFile)))) {
 
                 // read products from file into array list
-                String line = in.readLine();
-                while (line != null) {
-                    String[] fields = line.split(FIELD_SEP);
-                    String code = fields[0];
-                    String description = fields[1];
-                    String price = fields[2];
+                // String line = in.readLine();
+                while (in.available() >0) {
+                	//read product data from a file
+                    String code = in.readUTF();
+                    String description = in.readUTF();
+                    double price = in.readDouble();
 
                     Product p = new Product(
-                            code, description, Double.parseDouble(price));
+                            code, description, price);
                     products.add(p);
-
-                    line = in.readLine();
+                  //  line = in.readLine();
                 }
             } catch (IOException e) {
                 System.out.println(e);
                 return null;
             }
-        } else {
+        } 
+        else {
             System.out.println(
                     productsPath.toAbsolutePath() + " doesn't exist.");
             return null;            
@@ -56,6 +70,7 @@ public final class ProductBinaryFile implements DAO<Product> {
         return products;
     }
 
+    
     @Override
     public Product get(String code) {
         for (Product p : products) {
@@ -67,18 +82,17 @@ public final class ProductBinaryFile implements DAO<Product> {
     }
 
     private boolean saveAll() {
-        try (PrintWriter out = new PrintWriter(
-                               new BufferedWriter(
-                               new FileWriter(productsFile)))) {
+    	try (DataOutputStream out = new DataOutputStream( new BufferedOutputStream(
+                new FileOutputStream(productsFile)))) {
 
-            // write all products in the array list
-            // to the file
+            // write all products in the array list to the file
             for (Product p : products) {
-                out.print(p.getCode() + FIELD_SEP);
-                out.print(p.getDescription() + FIELD_SEP);
-                out.println(p.getPrice());
+                out.writeUTF(p.getCode()) ;
+                out.writeUTF(p.getDescription());
+                out.writeDouble(p.getPrice());
             }
             return true;
+            
         } catch (IOException e) {
             System.out.println(e);
             return false;

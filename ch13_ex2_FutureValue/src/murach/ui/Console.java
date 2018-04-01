@@ -40,7 +40,7 @@ public class Console {
             System.out.print(prompt);
             try {
             	String s = sc.nextLine();
-            	s=s.replaceAll("\\$", ""); //if a user add a $ sign, the system will remove it behind the scene
+            	s=s.replaceAll("\\$", ""); //if a user add a $ sign, the system will remove it behind the scene, the \\finds$
             	s=s.replaceAll("\\%", "");
                 d = Double.parseDouble(s); // you want a this string to return a double, that why we use parse
                 break;

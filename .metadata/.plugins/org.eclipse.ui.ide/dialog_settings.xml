@@ -116,30 +116,32 @@
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch11_ex1_MonthSales_sol"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch11_ex1_MonthSales"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch09_ex2_CloneableTest"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch09_ex1_DisplayableTest"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch08_ex3_EqualsTest"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch08_ex2_Product"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch08_ex1_Product_sol"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch08_ex1_Product"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch07_ex3_AreaAndPerimeter_sol"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch07_ex3_AreaAndPerimeter"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch07_ex2_FutureValue"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch07_ex2_FutureValue_sol"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch07_ex1_Product_sol"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch07_ex1_Product"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch06_ex4_FutureValue"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch06_ex3_FutureValue"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch06_ex1_Invoice"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch05_ex2_GuessNumber_sol"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch05_ex2_GuessNumber"/>
-			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch05_ex1_FutureValue_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch22_ex1_BookCatalog"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch21_ex2_ProductManager_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch21_ex2_ProductManager"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch21_ex1_DBTester"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch21_ex1_DBTester_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch16_ex3_CustomTester_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch16_ex2_ResourcesTester"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch16_ex1_ExceptionTester_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch16_ex1_ExceptionTester"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch15_ex2_ProductManager_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch15_ex2_ProductManager"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch15_ex1_CustomerManager_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch15_ex1_CustomerManager"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch14_ex2_AgeCalculator_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch14_ex2_AgeCalculator"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch14_ex1_Invoice"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch13_ex2_FutureValue"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch13_ex1_NameParser_sol"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_starts\ch13_ex1_NameParser"/>
+			<item value="C:\Users\Max-Student\Desktop\Murach Java\java\eclipse\ex_solutions\ch10_ex1_Product_sol"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 	<section name="SaveAsDialogSettings">
 		<item value="525" key="DIALOG_WIDTH"/>
