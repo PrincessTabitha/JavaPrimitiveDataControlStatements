@@ -5,8 +5,8 @@ public class DBTesterApp {
     private static Connection connection;
 
     public static void main(String args[]) {        
-        // open connection
-        try {
+        // open connection //as on p677
+        try { //open connection and close it below
             String dbUrl = "jdbc:sqlite:products.sqlite";
             connection = DriverManager.getConnection(dbUrl);        
         } catch (SQLException e) {

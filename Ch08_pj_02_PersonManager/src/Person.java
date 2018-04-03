@@ -5,7 +5,6 @@ private String firstName;
 private String lastName;
 
 public Person(String firstName, String lastName) {
-	super();
 	this.firstName = firstName;
 	this.lastName = lastName;
 }
@@ -25,11 +24,11 @@ public String getLastName() {
 public void setLastName(String lastName) {
 	this.lastName = lastName;
 }
-//use source to override same as you used constructor and getter and setters
 
+//use Source shortcut to override same as you used constructor and getter and setters
 @Override
 public String toString() {
-String msg="Name: " + firstName + lastName;
+String msg="Name: " + firstName + " " + lastName;
 	return msg;
 }
 

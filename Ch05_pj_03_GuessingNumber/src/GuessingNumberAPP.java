@@ -1,41 +1,37 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class GuessingNumberAPP {
-	
-	Scanner sc = new Scanner(System.in);
+
+	//Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
 
-		System.out.println("Ewelsome to the GuessingNumber App!");
-		
-		String choice="y"; //start your while loop
+		System.out.println("Welcome to the GuessingNumber App!");
 		int counter = 1;
-		
+		int num =Methods.getRandom();
+
+		String choice="y"; //start your while loop	
 		while (choice.equalsIgnoreCase("y")) {
-			
-			int num =Methods.getRandom();
-			
-			
-		while(true) //loops infinitely until we tell it to break 
+
+			while(true) //loops infinitely until we tell it to break 
 			{
-				int guess=Console.getInt("Enter a number:" , 1, 100); // when you get guess=console.grt it prompt you to (int, Promopt, Min, Max
+				int guess=Console.getInt("Enter a number:" , 1, 100); // when you get guess=console.get it prompt you to (int, Promopt, Min, Max
 				Methods.checkGuess(guess, num);
-			counter++; //will tell you how many trials
-			
-			if (guess ==num && counter >7) {
-				System.out.println("Take Math classes");
-			} else 
-				if (guess ==num && counter >3) {
+				counter++; //will tell you how many trials
+
+				if (guess ==num && counter >7) {
+					System.out.println("Take Math classes");
+					break; //if you don't break it will not go to the next one bc you used while true
+				} else if (guess ==num && counter >3) {
 					System.out.println("Not too bad, Youhave got some potential");
-				}
-				else if (guess== num && counter <=3) {
+					break;
+				} else if (guess== num && counter <=3) {
 					System.out.println("Great work, You are a math wizard");
+					break;
 				}
-			
-		choice =Console.getString("Try Again:? (y/n): ");
-		
-		System.out.println();
+				System.out.println();
 			}
+			choice =Console.getString("Try Again:? (y/n): ", "y", "n");
 		}
 	}
 }

@@ -1,7 +1,10 @@
+package util;
+
 import java.util.Scanner;
 
 public class Console {
-    
+
+
     private static Scanner sc = new Scanner(System.in);
 
     public static String getString(String prompt) {
@@ -11,35 +14,41 @@ public class Console {
         return s;
     }
 
-    public static String getString(String prompt, boolean isRequired) {
-        String s = "";
+    public static String getString(String prompt, int maxLength) {
         boolean isValid = false;
+        String s = "";
         while (!isValid) {
-            System.out.print(prompt);
-            s = sc.nextLine();
-            if (isRequired && s.equals("")) {
-                System.out.println("Error! This entry is required. Try again.");
-            } else {
-                isValid = true;
-            }
+            s = getString(prompt);  // read user entry
+        	if (s.length()>maxLength) {
+        		System.out.println("Invalid input!  Length must be <= "+maxLength+".");
+        		//sc.nextLine();
+        	}
+        	else
+        		isValid = true;
         }
+        
         return s;
     }
 
-    public static String getString(String prompt, String str1, String str2) {
-        boolean isValid = false;
-        String str = "";
-        while (!isValid) {
-	    	str = getString(prompt, true);
-	    	if (str.equalsIgnoreCase(str1) || str.equalsIgnoreCase(str2))
-	    		isValid = true;
-	    	else {
-	    		System.out.println("Error! Entry must be " + str1 + " or " + str1 + ". Try again.");
-	    	}
-        }
-        return str;
+    public static boolean getBoolean(String prompt) {
+    	boolean b = false;
+    	boolean isValid = false;
+    	while(!isValid) {
+    		String s = getString(prompt);
+    		if (s.equalsIgnoreCase("t")||s.equalsIgnoreCase("true")) {
+    			b = true;
+    			isValid = true;
+    		}
+    		else if (s.equalsIgnoreCase("f")||s.equalsIgnoreCase("false")) {
+    			b = false;
+    			isValid = true;
+    		}
+    		else
+    			System.out.println("Invalid input.  True or False expected.");
+    	}
+    	return b;
     }
-
+    
     public static int getInt(String prompt) {
         int i = 0;
         boolean isValid = false;
@@ -61,12 +70,12 @@ public class Console {
         boolean isValid = false;
         while (!isValid) {
             i = getInt(prompt);
-            if (i < min) {
+            if (i <= min) {
                 System.out.println(
-                        "Error! Number must be greater than or equal to " + min + ".");
-            } else if (i > max) {
+                        "Error! Number must be greater than " + min + ".");
+            } else if (i >= max) {
                 System.out.println(
-                        "Error! Number must be less than or equal to " + max + ".");
+                        "Error! Number must be less than " + max + ".");
             } else {
                 isValid = true;
             }

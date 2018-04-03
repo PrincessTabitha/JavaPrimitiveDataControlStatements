@@ -69,7 +69,7 @@ public class ProductDB implements DAO<Product> {
     }
     
     @Override
-    public Product get(String code) {
+    public Product get(String code) { //p689
         String sql = "SELECT ProductCode, Description, Price "
                    + "FROM Products "
                    + "WHERE ProductCode = ?";
@@ -94,7 +94,7 @@ public class ProductDB implements DAO<Product> {
     }
 
     @Override
-    public boolean add(Product p) {
+    public boolean add(Product p) { //p691
         String sql = "INSERT INTO Products (ProductCode, Description, Price) "
                    + "VALUES (?, ?, ?)";
         try (PreparedStatement ps = connection.prepareStatement(sql)) {
@@ -110,7 +110,7 @@ public class ProductDB implements DAO<Product> {
     }
 
     @Override
-    public boolean delete(Product p) {
+    public boolean delete(Product p) { //P691 if you delete an ID, the whole row is deleted
         String sql = "DELETE FROM Products "
                    + "WHERE ProductCode = ?";
         try (PreparedStatement ps = connection.prepareStatement(sql)) {
@@ -124,7 +124,7 @@ public class ProductDB implements DAO<Product> {
     }
 
     @Override
-    public boolean update(Product p) {
+    public boolean update(Product p) { //p691
         String sql = "UPDATE Products SET "
                    + "  Description = ?, "
                    + "  Price = ? "
