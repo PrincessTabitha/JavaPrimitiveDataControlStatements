@@ -12,16 +12,23 @@ public class OddOrEvenCheckerApp {
 		//user input
 		int num=console.getInt("Enter an integer:   ");
 		
-		//biz logic
-		String OddOrEven =" ";
+		//biz logic (my own version which works too)
 		if (num%2==0) {
-			OddOrEven="Even";
+			System.out.println("The number: " + num +  " " + "is even"  + "\n");
 		}
 		else {
-			OddOrEven="Odd";
+			System.out.println("The number: " + num +  " " + "is odd"  + "\n");
 		}
-		//printout	
-		System.out.println ("The number: " + num +  " " + "is " + OddOrEven + "\n");
+		//biz logic (the class version)
+//		String OddOrEven =" ";
+//		if (num%2==0) {
+//			OddOrEven="Even";
+//		}
+//		else {
+//			OddOrEven="Odd";
+//		}
+//		//printout	
+//		System.out.println ("The number: " + num +  " " + "is " + OddOrEven + "\n");
 	
 		choice=console.getString("Continue? y/n:    ");
 		System.out.println("Bye!");
