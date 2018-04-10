@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
 <fullyQualifiedTypeName name="java.time.LocalDate"/>
 <fullyQualifiedTypeName name="Customer"/>
-<fullyQualifiedTypeName name="Console"/>
 <fullyQualifiedTypeName name="Employee"/>
 <fullyQualifiedTypeName name="com.sun.corba.se.pept.transport.Connection"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
@@ -22,7 +21,6 @@
 <fullyQualifiedTypeName name="business.ProductDB"/>
 <fullyQualifiedTypeName name="business.Product"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="com.test.jpademo.db.DBUtil"/>
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="com.test.jpademo.business.UserDB"/>
 <fullyQualifiedTypeName name="com.test.jpademo.business.User"/>
@@ -30,4 +28,19 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.test.jpademo.business.Product"/>
 <fullyQualifiedTypeName name="com.test.jpademo.business.ProductDB"/>
+<fullyQualifiedTypeName name="com.sun.jmx.snmp.Timestamp"/>
+<fullyQualifiedTypeName name="com.test.jpademo.db.DBUtil"/>
+<fullyQualifiedTypeName name="com.test.jpademo.business.Vendor"/>
+<fullyQualifiedTypeName name="com.test.jpademo.business.VendorDB"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="com.test.jpademo.business.PurchaseRequestDB"/>
+<fullyQualifiedTypeName name="com.test.jpademo.business.PurchaseRequest"/>
+<fullyQualifiedTypeName name="com.test.jpademo.business.PurchaseRequestLineItem"/>
+<fullyQualifiedTypeName name="com.test.jpademo.business.PurchaseRequestLineItemDB"/>
+<fullyQualifiedTypeName name="Console"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.EnableAutoConfiguration"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.springframework.boot.SpringApplication"/>
 </qualifiedTypeNameHistroy>

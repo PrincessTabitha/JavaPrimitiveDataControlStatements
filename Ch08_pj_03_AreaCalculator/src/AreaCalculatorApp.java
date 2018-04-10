@@ -8,8 +8,8 @@ public class AreaCalculatorApp {
 		String choice=("Y");
 		while (choice.equalsIgnoreCase("y")) {
 			// start by getting user input
-			String csr= Console.getString("Calculate area of a Circle, Square or Rectangle? (c/s/r): " );
-			if (csr.equalsIgnoreCase("c")) {
+			String csr= Console.getString("Calculate area of a Circle, Square or Rectangle? (c/s/r): " ); 
+			if (csr.equalsIgnoreCase("c")) { //cant use getString str1, str2, 1ad str3, instead use getString with if's
 				double r=Console.getDouble("Enter radius:  ");
 				Circle c = new Circle(r); 
 				double area=c.getArea();
