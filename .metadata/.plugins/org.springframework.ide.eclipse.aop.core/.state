@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="Hello"/>
+<aop-project name="HelloWorldSpringWebJSONMySQL-2"/>
+<aop-project name="PRSWeb"/>
+<aop-project name="HelloWorldSpringWebJSONMySQL"/>
+<aop-project name="JPA-demo"/>
 </aop-reference-model>
