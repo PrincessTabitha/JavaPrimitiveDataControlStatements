@@ -22,7 +22,7 @@ public class AgeCalculatorApp {
         // Get and validate user's date of birth (3- parse the local time page 443)       
         LocalDate dateOfBirth = LocalDate.parse(dateOfBirthString); 
         
-        // Format and print user's date of birth
+        // Format and print user's date of birth 4-
         DateTimeFormatter dtf = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM); //page 453
         // String dateOfBirthFormatted = dtf.format(dateOfBirth); String currentDateFormatted=dtf.format(currentDate);
         

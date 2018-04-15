@@ -3,23 +3,33 @@ package com.prs.business.purchaserequest;
 import java.sql.Timestamp;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.prs.business.user.User;
 
 
 
 @Entity
-public class Purchaserequest {
+public class PurchaseRequest {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 		private int id;
-		private int userID;
+		@ManyToOne
+		@JoinColumn(name="userID")
+		private User user;
 		private String description;
 		private String justification;
+		@JsonFormat (shape =JsonFormat.Shape.STRING, pattern="yyyy-MM-dd") //check it
 		private Date dateNeeded;
 		private String deliveryMode;
+		@Column(name = "statusID")
 		private String status;
 		private double total;
 		//JsonFormat (Shape =JSONFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SS")
@@ -33,14 +43,14 @@ public class Purchaserequest {
 		public static final String STATUS_APPROVED = "Approved";
 		public static final String STATUS_REJECTED = "Rejected";
 		
-		public Purchaserequest() {
+		public PurchaseRequest() {
 			super();
 		}
-		public Purchaserequest(int id, int userID, String description, String justification, Date dateNeeded,
+		public PurchaseRequest(int id, User user, String description, String justification, Date dateNeeded,
 				String deliveryMode, String status, double total, Timestamp submittedDate, String reasonForRejection) {
 			super();
 			this.id = id;
-			this.userID = userID;
+			this.user = user;
 			this.description = description;
 			this.justification = justification;
 			this.dateNeeded = dateNeeded;
@@ -56,11 +66,11 @@ public class Purchaserequest {
 		public void setId(int id) {
 			this.id = id;
 		}
-		public int getUserID() {
-			return userID;
+		public User getUser() {
+			return user;
 		}
-		public void setUserID(int userID) {
-			this.userID = userID;
+		public void setUser(User user) {
+			this.user = user;
 		}
 		public String getDescription() {
 			return description;
